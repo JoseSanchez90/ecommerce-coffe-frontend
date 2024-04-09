@@ -26,7 +26,7 @@ const Navbar = () => {
             <div className="flex items-center justify-between gap-2 sm:gap-7">
                 {cart.items.length === 0 ? (
                     <ShoppingCart 
-                    strokeWidth="1" 
+                    strokeWidth={1} 
                     className="cursor-pointer" 
                     onClick={() => router.push("/cart")} />
                 ) : (
@@ -37,11 +37,11 @@ const Navbar = () => {
                 )}
 
                 <Heart 
-                strokeWidth="1" 
+                strokeWidth={1} 
                 className={`cursor-pointer ${lovedItems.length > 0 && 'fill-black dark:fil-white'}`} 
                 onClick={() => router.push("/loved-products")} />
 
-                <User strokeWidth="1" 
+                <User strokeWidth={1} 
                 className="cursor-pointer" 
                 />
 
