@@ -31,9 +31,9 @@ const Footer = () => {
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <p>
                         <span className="font-bold">
-                            Jose
+                            Huacho
                         </span>
-                        E-commerce
+                        Coffe
                     </p>
 
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
@@ -49,8 +49,8 @@ const Footer = () => {
 
                 <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
                     &copy; 2024
-                    <Link href="#">Jose. </Link>
-                    Todos los derechos reservados
+                    <Link href="#">Jose, </Link>
+                    Todos los derechos reservado.
                 </span>
             </div>
         </footer>
