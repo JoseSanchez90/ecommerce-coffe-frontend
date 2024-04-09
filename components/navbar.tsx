@@ -2,7 +2,7 @@
 import { BaggageClaim, Heart, ShoppingCart, User } from "lucide-react";
 import { useRouter } from "next/navigation";
 import MenuList from "./menu-list";
-import ItemsMenuMobile from "./items-menu-mobie";
+import ItemsMenuMobile from "./items-menu-mobile";
 import ToogleTheme from "./toggle-theme";
 import { useCart } from "@/hooks/use-cart";
 import { useLovedProducts } from "@/hooks/use-loved-products";

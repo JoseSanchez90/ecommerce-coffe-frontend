@@ -14,14 +14,14 @@ export default function Page() {
     const { categorySlug } = params
     const { result, loading }: ResponseType = useGetCategoryProduct(categorySlug)
     const [filterOrigin, setFilterOrigin] = useState('')
-    const [filterTaste, setFilterTaste] = useState('')
+    // const [filterTaste, setFilterTaste] = useState('')
     const router = useRouter()
 
     const filteredProducts = result !== null && !loading && (
-        filterOrigin && filterTaste == ''
+        filterOrigin == ''
             ? result
             : result.filter((product: ProductType) =>
-                product.attributes.origin === filterOrigin && product.attributes.taste === filterTaste)
+                product.attributes.origin === filterOrigin)
         )       
 
     return (
@@ -32,7 +32,7 @@ export default function Page() {
             <Separator />
 
             <div className="sm:flex sm:justify-between">
-                <FiltersControlsCategory setFilterOrigin={setFilterOrigin} setFilterTaste={setFilterTaste} />
+                <FiltersControlsCategory setFilterOrigin={setFilterOrigin} />
 
                 <div className="grid gap-5 mt-8 sm:grid-cols-2 md:grid-cols-3 md:gap-10">
                     {loading && (
