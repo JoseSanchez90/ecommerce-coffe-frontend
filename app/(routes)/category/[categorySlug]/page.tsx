@@ -14,20 +14,19 @@ export default function Page() {
     const { categorySlug } = params
     const { result, loading }: ResponseType = useGetCategoryProduct(categorySlug)
     const [filterOrigin, setFilterOrigin] = useState('')
-    // const [filterTaste, setFilterTaste] = useState('')
     const router = useRouter()
 
     const filteredProducts = result !== null && !loading && (
-        filterOrigin == ''
+        filterOrigin === ''
             ? result
             : result.filter((product: ProductType) =>
                 product.attributes.origin === filterOrigin)
-        )       
+    )
 
     return (
         <div className="max-w-6xl py-4 mx-auto sm:py-16 sm:px-24">
             {result !== null && !loading && (
-                <h1 className="text-3xl font-medium">Café {result[0].attributes.category.data.attributes.categoryName}</h1>
+                <h1>Café {result[0].attributes.category.data.attributes.categoryName}</h1>
             )}
             <Separator />
 

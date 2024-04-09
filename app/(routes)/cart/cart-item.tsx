@@ -20,7 +20,7 @@ const CartItem = (props: CartItemProps) => {
                 <img 
                 src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${product.attributes.images.data[0].attributes.url}`} 
                 alt="Product" 
-                className="w-32 h-24 overflow-hidden rounded-md sm:w-44 sm:h-32"
+                className="w-32 h-24 overflow-hidden rounded-md sm:w-auto sm:h-32"
                 />
             </div>
             <div className="flex justify-between flex-1 px-6">

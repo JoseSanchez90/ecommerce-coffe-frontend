@@ -17,7 +17,7 @@ const InfoProduct = (props: InfoProductProps) => {
 
     return ( 
         <div className="px-6">
-            <div className=" justify-between sm:mt-3 lg:mt-0 mb-3 sm:flex">
+            <div className=" justify-between mb-3 sm:flex">
                 <h1 className="text-2xl">{product.attributes.productName}</h1>
                 <div className="flex items-center justify-between gap-3">
                     <p className="px-2 py-1 text-xs text-white bg-black rounded-full dark:bg-white dark:text-black w-fit">

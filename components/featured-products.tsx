@@ -37,7 +37,7 @@ const FeaturedProducts = () => {
                                             <img 
                                             src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${images.data[0].attributes.url}`} 
                                             alt="Image featured"
-                                            className="w-full h-48 object-cover" />
+                                            />
                                             <div className="absolute w-full px-6 transition duration-200 opacity-0 group-hover:opacity-100 bottom-5">
                                                 <div className="flex justify-center gap-x-6">
                                                     <IconButton 
@@ -56,7 +56,7 @@ const FeaturedProducts = () => {
                                         </CardContent>
                                         <div className="flex justify-between gap-4 px-8">
                                             <h3 className="text-lg font-bold">{productName}</h3>
-                                            <div className="flex items-center justify-between">
+                                            <div className="flex items-center justify-between gap-3">
                                                 <p className="px-2 py-1 text-white bg-black rounded-full dark:bg-white dark:text-black w-fit">{taste}</p>
                                                 <p className="px-2 py-1 text-white bg-yellow-900 rounded-full w-fit">{origin}</p>
                                             </div>

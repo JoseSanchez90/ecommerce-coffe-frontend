@@ -10,9 +10,9 @@ const ItemsMenuMobile = () => {
                 <Menu />
             </PopoverTrigger>
             <PopoverContent>
-                <Link href="/category/cafe-molido" className="block">Café molido</Link>
-                <Link href="/category/cafe-grano" className="block">Café en grano</Link>
-                <Link href="/category/cafe-capsula" className="block">Café en cápsulas</Link>
+                <Link href="/category/molido" className="block">Café molido</Link>
+                <Link href="/category/grano" className="block">Café en grano</Link>
+                <Link href="/category/capsula" className="block">Café en cápsulas</Link>
             </PopoverContent>
         </Popover>
      );
