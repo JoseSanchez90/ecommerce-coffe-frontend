@@ -38,7 +38,7 @@ export default function Page() {
                     {loading && (
                         <SkeletonSchema grid={3} />
                     )}
-                    {filteredProducts !== null && !loading && (
+                    {filteredProducts !== undefined && !loading && (
                         filteredProducts.map((product: ProductType) => (
                             <ProductCard key={product.id} product={product} />
                         ))
