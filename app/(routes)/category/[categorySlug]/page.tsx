@@ -38,9 +38,9 @@ export default function Page() {
                     {loading && (
                         <SkeletonSchema grid={3} />
                     )}
-                    {filteredProducts !== undefined && !loading && (
-                        filteredProducts.map((product: ProductType) => (
-                            <ProductCard key={product.id} product={product} />
+                    {Array.isArray(filteredProducts) && !loading && (
+  filteredProducts.map((product: ProductType) => (
+    <ProductCard key={product.id} product={product} />
                         ))
                     )}
                     {filteredProducts !== null && !loading && filteredProducts.length === 0 && (
